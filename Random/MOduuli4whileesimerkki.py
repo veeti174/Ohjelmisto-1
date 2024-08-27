@@ -1,0 +1,41 @@
+# Moduuli 4 - while esimerkkeja
+""""""
+#while True:
+    #print("Ikuinen silmukka")
+"""
+hooray_count = int(input("Kuinka monta kertaa hurrataan? "))
+hooray_counter = 0
+
+while hooray_counter < hooray_count:  # ehdosta syntyy aina True tai false
+    # tulostetaan ehdosta syntyvä arvo
+    # print(hooray_counter <3)
+    hooray_counter = hooray_counter + 1
+    print(hooray_counter < 3)
+    print(f"{hooray_counter}, kerran Hurraa!")
+print(f"Hurrattiin {hooray_counter} kertaa")
+
+"""
+
+# komentorivikäyttöliittymä
+command = ""
+while command != "lopeta":
+    command = input("Anna komento> ")
+    if command == "tulosta":
+        print("Tulostetaan")
+    elif command == "lopeta":
+        print("Lopetetaan ohjelma")
+    elif command == "hurraa":
+        hooray_count = int(input("Kuinka monta kertaa hurrataan? "))
+        hooray_counter = 0
+
+        while hooray_counter < hooray_count:  # ehdosta syntyy aina True tai false
+            # tulostetaan ehdosta syntyvä arvo
+            # print(hooray_counter <3)
+            hooray_counter = hooray_counter + 1
+            print(hooray_counter < 3)
+            print(f"{hooray_counter}, kerran Hurraa!")
+        print(f"Hurrattiin {hooray_counter} kertaa")
+        #break # toistorakenteen suoritus loppuu heti
+    else:
+        print("En ymmärrä, Tarkista komentosi, kiitos.")
+print("Ohlejman suoritus loppui.")

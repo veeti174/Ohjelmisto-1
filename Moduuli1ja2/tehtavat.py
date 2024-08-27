@@ -1,5 +1,4 @@
 # Harjoitustehtävä 1.1 ja 1.2
-from moduulin2t3 import piiri
 
 #print("Hei Veeti Isokangas!")
 
