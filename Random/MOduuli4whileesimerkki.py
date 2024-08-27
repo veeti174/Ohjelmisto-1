@@ -15,7 +15,25 @@ while hooray_counter < hooray_count:  # ehdosta syntyy aina True tai false
 print(f"Hurrattiin {hooray_counter} kertaa")
 
 """
+import random
+# noppapeli
 
+rounds = 0
+total_throw_count = 0
+while rounds < 100:
+    rounds += 1
+    die1 = die2 = counter = 0
+    while die1 != 6 or die2 !=6 :
+        die1 = random.randint(1, 6)
+        die2 = random.randint(1, 6)
+        counter +=1
+        #print(f"Nopan silmäluku: {die1}, heittojen lkm: {counter}")
+    total_throw_count = total_throw_count+ counter
+    print(f"Heittojen lkm: {counter}, yhteensä: {total_throw_count}")
+    print(f"Heittojen lkm keskiarvo: {total_throw_count/rounds}")
+
+
+"""
 # komentorivikäyttöliittymä
 command = ""
 while command != "lopeta":
@@ -39,3 +57,4 @@ while command != "lopeta":
     else:
         print("En ymmärrä, Tarkista komentosi, kiitos.")
 print("Ohlejman suoritus loppui.")
+"""
