@@ -9,7 +9,8 @@ import math
 import random
 iterator = 0
 #Todo: Kysy N arvo käyttäjältä
-N = 10000 # pisteiden kokonaismäärä
+N = int(input("Montako pistettä halutaan? "))
+# pisteiden kokonaismäärä
 n = 0 # ympyrän sisään osuvat pisteet
 while iterator < N:
     #arvotaan koordinaatiot väliltä -1 ka 1
