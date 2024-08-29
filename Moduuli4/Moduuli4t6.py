@@ -8,7 +8,6 @@
 import math
 import random
 iterator = 0
-#Todo: Kysy N arvo käyttäjältä
 N = int(input("Montako pistettä halutaan? "))
 # pisteiden kokonaismäärä
 n = 0 # ympyrän sisään osuvat pisteet
