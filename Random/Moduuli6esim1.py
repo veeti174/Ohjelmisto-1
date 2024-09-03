@@ -1,3 +1,4 @@
+"""
 #print([1,5,3].sort())
 
 # Funktio-esimerkkejä
@@ -84,3 +85,62 @@ def modify_value():
     main_app_var= 1
 modify_value()
 print(main_app_var)
+
+"""
+
+# Funktiot ja lista parametrina
+#inventory muuttuujaan tallennetaan VIITTAUS olemassaolevaan
+"""
+def print_inventory(inventory):
+    print("Pelaajalla on:")
+    for item in inventory:
+        print(item)
+    inventory.append("uusi juttu lisätty funktion sisällä")
+
+player1_inventory = ["veitsi", "vesipullo"]
+player2_inventory = ["kirves", "eväsleipä"]
+
+print_inventory(player1_inventory)
+print_inventory(player2_inventory)
+# tulostus muuttuu, koska funktion muokkasi samaa listaa
+print_inventory(player1_inventory)
+print_inventory(player2_inventory)
+
+
+# sama stringi-arvolla: alkupeäsiten muuttujien arvo ei muutu
+def print_inventory_str(inventory):
+    print("Pelaajalla on: " + inventory)
+    inventory += ", uusi juttu lisätty funktion sisällä"
+
+player1_inventory = "veitsi, vesipullo"
+player2_inventory = "kirves, eväsleipä"
+
+print_inventory_str(player1_inventory)
+print_inventory_str(player2_inventory)
+# tulostus ei muutu
+print_inventory_str(player1_inventory)
+print_inventory_str(player2_inventory)
+"""
+
+# nimetyt parametrit ja oletusarvot
+
+def calc_sum(num1=0, num2=0, num3=0):
+    print(f"Laskutoimitus: {num1} + {num2} + {num3}")
+    return num1 + num2 + num3
+print(calc_sum(2))
+print(calc_sum(2, num3=5))
+print(calc_sum(1, 4, 6))
+
+# vaihtuvanmittainen argumenttijono
+# *numd -> nums muuttujaan muodostuu lista parametreista
+def calc_sum_adv(nums):
+    total = 0
+    calculation = "Laskutoimitus:"
+    for num in nums:
+        total += num
+        calculation = calculation + " +" + str(num)
+
+        print(calculation)
+    return total
+
+print(calc_sum_adv([1, 2, 3, 6]))
