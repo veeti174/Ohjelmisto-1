@@ -1,17 +1,21 @@
-arvo1 = int(input("Anna kokonais luku: "))
-arvo2 = int(input("Anna kokonais luku: "))
-arvo3 = int(input("Anna kokonais luku: "))
-arvo4 = int(input("Anna kokonais luku: "))
-kaikki = []
-kaikki.append(arvo1)
-kaikki.append(arvo2)
-kaikki.append(arvo3)
-kaikki.append(arvo4)
+empty = (-234567)
+arvot = []
+arvo = int(input("Anna kokonaisluku yksikerrallaan: "))
+if arvo != empty:
+    arvot.append(arvo)
+    arvot.sort()
+while arvo != empty:
+    arvo = int(input("Anna kokonaisluku yksikerrallaan ja kun olet valmis kirjoita -234567: "))
+    if arvo == empty:
+        break
+    arvot.append(arvo)
+    arvot.sort()
+
 
 
 def inv():
 
-    arvo = kaikki
-    print(sum(arvo))
+    arvotus = arvot
+    print(sum(arvotus))
 korva = inv()
 print(korva)
