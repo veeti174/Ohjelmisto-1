@@ -23,7 +23,7 @@ def fetch_airport_by_icao(code):
     return result_row
 
 # pääohjelma kysyy syötteen, ja käyttää sitä funktiokutsun parametrina
-user_input = input("Anna ICAO koodi.: ")
+user_input = input("Anna icao koodi.: ")
 # muutetaan kaikki merkkijonon kirjaimet isoiksi (varmmuden vuoksi)
 user_input = user_input.upper()
 result = fetch_airport_by_icao(user_input)
