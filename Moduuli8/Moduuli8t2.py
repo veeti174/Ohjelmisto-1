@@ -73,6 +73,7 @@ if result: # sama kuin vertailu: result != None
 sorted_indices = np.argsort(-arr[:,1])
 sorted_arr = arr[sorted_indices]
 
+
 print(sorted_arr)
 
 print(np.sort(result).tolist())
