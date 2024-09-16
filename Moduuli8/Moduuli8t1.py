@@ -17,7 +17,7 @@ def fetch_airport_by_icao(code):
     connection = get_db_connection()
     sql = f"SELECT name, municipality FROM airport WHERE ident='{code}';"
     cursor = connection.cursor()
-    cursor.execute(sq
+    cursor.execute(sq)
     result_row = cursor.fetchone()
     #print(result_row)
     return result_row
