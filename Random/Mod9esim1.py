@@ -12,6 +12,7 @@ class Kissa:
         # Määritellään myös kolmas ominaisuus
         self.omistaja = "Tuntematon"
 
+
 # Pääohjelma
 # Luodaaan uusi Kissa-tyyppinen olio
 ekaKissa = Kissa("Pörri", 3)
