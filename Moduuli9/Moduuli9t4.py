@@ -29,6 +29,11 @@ while y <= 10:
 
 kisa = True
 while kisa:
-    for auto in kisa:
-        auto-kiihdyta(randint(-10, 15))
+    for auto in race:
+        auto.kiihdyta(randint(-10, 15))
         auto.kulje(1)
+        if auto.distance >= 10000:
+            kisa = False
+            for auto in race:
+                autot = [auto.plate, auto.speed, auto.topspeed, auto.distance]
+                print(autot)
