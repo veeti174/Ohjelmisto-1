@@ -16,4 +16,3 @@ elif (arvo ==2):
 
 else:
     print("Väärä vastaus.")
-    return
